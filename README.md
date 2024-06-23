@@ -15,13 +15,13 @@ mysql -uroot -p
 CREATE DATABASE books_finder; # or replace it with another name
 ```
 
-3. Replace hikariConfig.jdbcUrl in file [DatabaseConnection.kt](/src/main/DatabaseConnection.kt) with the name of the database you created earlier
+3. Replace hikariConfig.jdbcUrl in file [DatabaseConnection.kt](/src/main/kotlin/dev/onedive/books/finder/utils/DatabaseConnection.kt) with the name of the database you created earlier
 
 ```Kotlin
 hikariConfig.jdbcUrl = "jdbc:mysql://localhost:3306/books_finder" // Replace with your database name
 ```
 
-4. Replace hikariConfig.username and hikariConfig.password in file [DatabaseConnection.kt](/src/main/DatabaseConnection.kt) with the your username and password MySQL database 
+4. Replace hikariConfig.username and hikariConfig.password in file [DatabaseConnection.kt](/src/main/kotlin/dev/onedive/books/finder/utils/DatabaseConnection.kt) with the your username and password MySQL database 
 
 ```Kotlin
 hikariConfig.username = "root" // change to your MySQL username;
